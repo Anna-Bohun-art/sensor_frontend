@@ -1,18 +1,18 @@
 
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '@/views/Homeview.vue'
 import SncRegister from "@/views/Signup.vue"
 import UserProfile from "@/views/UserProfile.vue"
 import DashboardPage from "@/views/DashboardPage.vue"
 import Login from "@/views/Login"
 import SettingsProfile from "@/views/SettingsProfile"
 
+import MainPage from "@/views/MainPage.vue";
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: MainPage
   },
   {
     path: '/signup',

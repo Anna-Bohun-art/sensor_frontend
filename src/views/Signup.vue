@@ -86,3 +86,8 @@ import {actionTypes} from "@/store/modules/auth"
 
     }
 </script>
+<style>
+.auth-page {
+    margin-bottom: 100px;
+}
+</style>

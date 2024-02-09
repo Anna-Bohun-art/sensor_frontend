@@ -1,12 +1,12 @@
 <template>
-    <div class="pagination">
+    <div class="container">
         <nav class="page navigation example">
                 <ul class="pagination">
                     <li class="page-item active" >
                         <button @click="onClickFirstPage"
                         :disabled="isInFirstPage"
                         type="button"
-                        class="page-item">
+                        class="page-item btn btn-outline-dark btn-lg">
                             First
                         </button>
                     </li>
@@ -14,7 +14,7 @@
                         <button @click="onClickPreviousPage"
                         :disabled="isInFirstPage"
                         type="button"
-                        class="page-item">
+                        class="btn btn-outline-dark btn-lg">
                             Previous
                         </button>
                     </li>
@@ -22,7 +22,7 @@
                         <button @click="onClickPage(page.name)"
                         :disabled="page.isDisabled"
                         type="button"
-                        class="page-item"
+                        class="page-item btn btn-outline-secondary btn-lg"
                         :class="{active: isPageActive(page.name)}">
                             {{ page.name }}
                         </button>
@@ -31,7 +31,7 @@
                         <button @click="onClickNextPage"
                         :disabled="isInLastPage"
                         type="button"
-                        class="page-item">
+                        class="page-item btn btn-outline-dark btn-lg">
                             Next
                         </button>
                     </li>
@@ -39,7 +39,7 @@
                         <button @click="onClickLastPage"
                         :disabled="isInLastPage"
                         type="button"
-                        class="page-item">
+                        class="page-item btn btn-outline-dark btn-lg">
                             Last
                         </button>
                     </li>
@@ -124,3 +124,8 @@ const onClickLastPage = () => {
 } 
 
 </script>
+<style>
+.page-item {
+  margin-right: 10px;
+}
+</style>
