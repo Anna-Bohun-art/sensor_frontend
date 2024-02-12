@@ -1,8 +1,11 @@
 <template>
     <div class="row btn-primary pt-5 pb-5 bg-gradient mt-5">
         <div class="col px-5 text-light google-font fs-5">
-            <p >@All rights reserved Anna Kladova Bohun</p>
-            
+            <span>
+                <p>@All rights reserved
+                    <a href="https://annakladovabohun.netlify.app/"> Anna Kladova Bohun</a>
+                </p>
+                </span>
         </div>
         <div class="col text-light google-font fs-5">
             <p>Telephone Number: +4917643408413</p>
@@ -14,7 +17,7 @@
 </template>
 <script setup>
 </script>
-<style>
+<style scoped>
 .bg-footer{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -23,5 +26,9 @@
 }
 .google-font {
     font-family: 'Playfair Display', serif;
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 </style>

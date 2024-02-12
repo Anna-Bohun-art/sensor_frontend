@@ -3,7 +3,7 @@
         <div class="container page">
             <div class="row">
                 <div class="col-md-6 offset-md-3 col-xs-12">
-                    <h1 class="text-xs-center">Sign in</h1>
+                    <h1 class="text-xs-center mb-5">Sign in</h1>
 
                     <snc-validation-errors v-if="validationErrors" :validation-errors="validationErrors">
                         <!--
@@ -18,10 +18,10 @@
                     
                     <form @submit.prevent="onSubmit">
                         <fieldset class="form-group">
-                            <input class="form-control form-control-lg" type="text" placeholder="Email"
+                            <input class="form-control form-control-lg mb-5" type="text" placeholder="Email"
                             v-model="email" />
                         </fieldset><fieldset class="form-group">
-                            <input class="form-control form-control-lg" type="password" placeholder="Password"
+                            <input class="form-control form-control-lg mb-5" type="password" placeholder="Password"
                             v-model="password" />
                         </fieldset>
                         <button class="btn btn-lg btn-success pull-xs-right" :disabled="isSubmitting">Sign in</button>

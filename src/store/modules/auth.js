@@ -3,10 +3,11 @@ import { setItem } from "@/helpers/persistanceStorage"
 //import { registerURL, loginURL } from "@/api/auth"
 const state = {
     isSubmitting: false,
-    isLoggedIn: null,
+    isLoggedIn: false,
     currentUser: null,
     validationErrors: null,
     isLoading: false,
+    
     
     
 }

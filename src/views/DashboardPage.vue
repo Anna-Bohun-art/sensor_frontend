@@ -225,7 +225,7 @@ watch(sensorData, (newSensorData) => {
 
 
 </script>
-<style>
+<style scoped>
 .sensor-table > h1 {
     
     text-align: center;
